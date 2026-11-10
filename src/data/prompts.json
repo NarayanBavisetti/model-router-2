@@ -1,0 +1,323 @@
+[
+  {
+    "id": "cc_01",
+    "domain": "call_centre_summary",
+    "priority": "latency",
+    "hidden_difficulty": "medium",
+    "prompt": "Summarise this call in 3 bullet points: issue, action taken, next step.\n\nAgent: Thank you for calling QuickBank, how can I help?\nCustomer: Hi, my debit card got declined twice at a petrol pump this morning even though I have balance.\nAgent: I'm sorry about that. Let me check... I can see the card was temporarily blocked by our fraud system because of two quick transactions.\nCustomer: Oh. Can you unblock it?\nAgent: Yes, I've removed the block now. It will work within 10 minutes. You'll get an SMS confirmation.\nCustomer: Great, thanks.",
+    "reference_or_rubric": "Must mention: (1) debit card declined / blocked by fraud system due to two quick transactions, (2) agent removed the block, (3) card works in ~10 minutes and customer gets SMS confirmation. Three bullets, concise."
+  },
+  {
+    "id": "cc_02",
+    "domain": "call_centre_summary",
+    "priority": "cost",
+    "hidden_difficulty": "medium",
+    "prompt": "Is call ka short summary English mein likho (issue, resolution, follow-up):\n\nAgent: Namaste, FlipMart support se bol raha hoon.\nCustomer: Haan ji, mera order 4 din se 'out for delivery' dikha raha hai lekin aaya nahi hai. Order number FM88213.\nAgent: Ek minute... haan, delivery partner ne galat pincode daal diya tha. Main abhi re-dispatch kar deta hoon, kal tak aa jayega.\nCustomer: Theek hai, lekin agar kal bhi nahi aaya toh refund chahiye.\nAgent: Bilkul, agar kal shaam tak nahi aata toh aap call karein, hum full refund process kar denge.",
+    "reference_or_rubric": "English summary must mention: order FM88213 stuck 'out for delivery' 4 days; cause = delivery partner entered wrong pincode; agent re-dispatched, ETA tomorrow; customer wants full refund if not delivered by tomorrow evening and agent agreed."
+  },
+  {
+    "id": "cc_03",
+    "domain": "call_centre_summary",
+    "priority": "accuracy",
+    "hidden_difficulty": "medium",
+    "prompt": "इस कॉल का सारांश हिंदी में 2-3 वाक्यों में लिखिए:\n\nएजेंट: नमस्ते, पावरग्रिड सपोर्ट में आपका स्वागत है।\nग्राहक: मेरे घर की बिजली कल रात से नहीं आ रही है। आस-पास सबके घर में बिजली है।\nएजेंट: आपका कंज्यूमर नंबर बताइए।\nग्राहक: 55-2310-98।\nएजेंट: धन्यवाद। आपके मीटर में फॉल्ट दिख रहा है। मैंने टेक्नीशियन की विज़िट आज शाम 5 बजे के लिए बुक कर दी है। शिकायत संख्या 7781 है।\nग्राहक: ठीक है, धन्यवाद।",
+    "reference_or_rubric": "Hindi summary must mention: customer's power out since last night while neighbours have power; consumer number 55-2310-98; meter fault found; technician visit booked today 5 pm; complaint number 7781."
+  },
+  {
+    "id": "cc_04",
+    "domain": "call_centre_summary",
+    "priority": "accuracy",
+    "hidden_difficulty": "hard",
+    "prompt": "Read the transcript, then (a) summarise the call, (b) identify the root cause of the customer's problem, and (c) calculate the exact refund the customer is owed under the policy below. Show your reasoning.\n\nPolicy: Broadband outages longer than 24 continuous hours are credited at the daily rate (monthly plan / 30) per full day of outage. Partial days are not credited. If the customer was also charged a technician visit fee for a fault that turned out to be on the provider's side, that fee (₹350) is refunded in full.\n\nTranscript:\nAgent: SkyNet Broadband, how can I help?\nCustomer: My internet was completely down from Monday 9 am to Thursday 3 pm. I pay ₹1,200 a month for the 200 Mbps plan. I also got charged ₹350 for a technician visit on Tuesday, and the guy said the fibre was cut at your junction box, not inside my flat.\nAgent: I'm sorry. Let me check... yes, the ticket says fibre cut at the street junction box, fixed Thursday 3 pm. The technician fee was auto-applied because the visit was booked under 'customer premises'.\nCustomer: So what do I get back?\nAgent: Let me calculate that and apply the credit to your next bill.\nCustomer: Also please make sure this doesn't happen again, this is the second time this year.\nAgent: Noted. I'll raise a request to inspect the junction box.",
+    "reference_or_rubric": "(a) Summary: outage Mon 9am to Thu 3pm, customer on ₹1,200/month plan, charged ₹350 technician fee, fault was at provider's junction box, credit to next bill, customer asks for prevention; agent raises junction box inspection. (b) Root cause: fibre cut at provider's street junction box, and the visit fee was wrongly auto-applied because the visit was booked as 'customer premises'. (c) Refund: outage = 3 days 6 hours -> 3 full days x (1200/30 = ₹40) = ₹120 credit, plus ₹350 technician fee refunded = ₹470 total. Full marks require ₹470 with the 3-day (not 4-day) logic."
+  },
+  {
+    "id": "cc_05",
+    "domain": "call_centre_summary",
+    "priority": "cost",
+    "hidden_difficulty": "medium",
+    "prompt": "இந்த அழைப்பின் சுருக்கத்தை ஆங்கிலத்தில் 3 புள்ளிகளில் எழுதுங்கள்:\n\nஏஜென்ட்: வணக்கம், சிட்டி கேஸ் சர்வீஸ்.\nவாடிக்கையாளர்: என் கேஸ் சிலிண்டர் புக்கிங் ஒரு வாரமாக டெலிவரி ஆகவில்லை. புக்கிங் எண் CG4471.\nஏஜென்ட்: சரி, பார்க்கிறேன்... உங்கள் பகுதியில் டெலிவரி வாகனம் பழுதாகி இருந்தது. நாளை காலை 10 மணிக்குள் டெலிவரி செய்யப்படும்.\nவாடிக்கையாளர்: நாளை கண்டிப்பாக வர வேண்டும், வீட்டில் சமைக்க முடியவில்லை.\nஏஜென்ட்: நிச்சயமாக. உங்களுக்கு SMS அனுப்பப்படும்.",
+    "reference_or_rubric": "English bullets must mention: gas cylinder booking CG4471 not delivered for a week; cause = delivery vehicle breakdown in the area; delivery promised by 10 am tomorrow with SMS; customer stresses urgency (cannot cook)."
+  },
+  {
+    "id": "cc_06",
+    "domain": "call_centre_summary",
+    "priority": "latency",
+    "hidden_difficulty": "easy",
+    "prompt": "One-line summary of this call:\n\nAgent: Hello, AirGo support.\nCustomer: I want to change the email on my account from old@mail.com to new@mail.com.\nAgent: Done, I've updated it. You'll get a verification link on the new email.\nCustomer: Thanks, bye.",
+    "reference_or_rubric": "One line: customer requested email change from old@mail.com to new@mail.com; agent updated it; verification link sent to new email."
+  },
+  {
+    "id": "cc_07",
+    "domain": "call_centre_summary",
+    "priority": "accuracy",
+    "hidden_difficulty": "hard",
+    "prompt": "Analyse this call transcript. Summarise it, then flag any compliance problems in what the agent said (the company's rules: never promise a specific interest rate before credit check; never ask for the full card number on a call; always read the recorded-call disclosure). Finally, decide whether this call should be escalated to a supervisor and justify your decision.\n\nAgent: Hi, this is Rohan from EasyLoan.\nCustomer: Hi, I applied for a personal loan yesterday.\nAgent: Great, I can see the application. Don't worry, you'll definitely get it at 10.5%, that's guaranteed for salaried people.\nCustomer: Oh nice. What else do you need?\nAgent: Just read me your full 16-digit card number and expiry so I can verify your bank.\nCustomer: Um, is that safe?\nAgent: Totally, we do this all the time.\nCustomer: Okay... 4532 1198 ...\nAgent: Perfect. You'll hear from us in 2 days.",
+    "reference_or_rubric": "Summary: customer follows up on personal loan; agent promises approval at 10.5%, asks for full card number and expiry, customer starts reading it. Compliance flags (all three must be found): (1) guaranteed a 10.5% rate before credit check, (2) asked for full 16-digit card number + expiry on a call, (3) no recorded-call disclosure was read. Decision: escalate to supervisor, justified by multiple serious breaches including possible card data exposure and misleading rate promise."
+  },
+  {
+    "id": "cc_08",
+    "domain": "call_centre_summary",
+    "priority": "cost",
+    "hidden_difficulty": "medium",
+    "prompt": "Ee call ki summary English lo rayandi (problem, action, follow-up):\n\nAgent: Namaskaram, SwiftCab support.\nCustomer: Nenu ninna night ride book chesanu, driver cancel chesadu kani naaku ₹60 cancellation charge vesaru. Ride ID SC90113.\nAgent: Okka nimisham... avunu, driver side nunchi cancel ayindi, charge thappu ga padindi. Nenu ippude ₹60 refund initiate chesthunnanu, 3 days lo wallet lo vasthundi.\nCustomer: Sare, thanks.",
+    "reference_or_rubric": "English summary must mention: ride SC90113 cancelled by driver but customer wrongly charged ₹60 cancellation fee; agent confirmed driver-side cancel and initiated ₹60 refund to wallet within 3 days."
+  },
+  {
+    "id": "de_01",
+    "domain": "document_extraction",
+    "priority": "accuracy",
+    "hidden_difficulty": "medium",
+    "prompt": "Extract the following fields as JSON: invoice_number, invoice_date, vendor, total_amount, currency, due_date.\n\nTAX INVOICE\nInvoice No: INV-2026-0457   Date: 12-Sep-2026\nFrom: Meridian Office Supplies Pvt Ltd, Pune\nTo: Bluefin Analytics LLP\nItems: 20 x A4 paper ream @ ₹280 = ₹5,600; 5 x toner cartridge @ ₹2,100 = ₹10,500\nSubtotal ₹16,100   GST 18% ₹2,898   Grand Total ₹18,998\nPayment due within 30 days (by 12-Oct-2026).",
+    "reference_or_rubric": "JSON with invoice_number INV-2026-0457, invoice_date 12-Sep-2026 (any unambiguous format), vendor Meridian Office Supplies Pvt Ltd, total_amount 18998, currency INR/₹, due_date 12-Oct-2026. All six correct for full marks; valid JSON."
+  },
+  {
+    "id": "de_02",
+    "domain": "document_extraction",
+    "priority": "accuracy",
+    "hidden_difficulty": "medium",
+    "prompt": "इस रसीद से निम्न जानकारी JSON में निकालिए: dukaan_naam, tareekh, kul_rashi, bhugtan_tarika.\n\nश्री बालाजी किराना स्टोर\nदिनांक: 03/10/2026\nचावल 5 किलो - ₹320\nदाल 2 किलो - ₹260\nतेल 1 लीटर - ₹145\nकुल: ₹725\nभुगतान: UPI (PhonePe)\nधन्यवाद, फिर आइए!",
+    "reference_or_rubric": "JSON with dukaan_naam = श्री बालाजी किराना स्टोर (or transliteration Shri Balaji Kirana Store), tareekh = 03/10/2026, kul_rashi = 725, bhugtan_tarika = UPI / PhonePe. All four correct for full marks."
+  },
+  {
+    "id": "de_03",
+    "domain": "document_extraction",
+    "priority": "accuracy",
+    "hidden_difficulty": "hard",
+    "prompt": "From the contract excerpt below, extract the payment terms as JSON, then calculate the total amount payable if the client pays on 20-Nov-2026. Show the calculation step by step, including GST and any late-payment interest.\n\nSERVICE AGREEMENT (excerpt)\n4.1 Fees: The Client shall pay the Provider a fixed fee of ₹2,40,000 (Rupees two lakh forty thousand) for the Services, exclusive of applicable taxes.\n4.2 Taxes: GST at 18% shall be added to all fees.\n4.3 Invoicing: The invoice shall be dated 01-Oct-2026 and is payable within 30 days of the invoice date.\n4.4 Late payment: Amounts unpaid after the due date accrue simple interest at 18% per annum, calculated daily on the total invoiced amount (including GST), from the day after the due date until payment.",
+    "reference_or_rubric": "JSON: fee 240000, gst_rate 18%, invoice_date 01-Oct-2026, due_date 31-Oct-2026, interest 18% p.a. simple daily on total incl. GST. Calculation: GST = 43,200; invoiced total = 2,83,200; due 31-Oct-2026; payment 20-Nov-2026 is 20 days late (1-Nov to 20-Nov inclusive); interest = 283200 x 0.18 x 20/365 = ₹2,793 (approx; accept 2,790-2,800); total payable ≈ ₹2,85,993. Full marks require correct due date, 20 days, and total within ₹10 of 2,85,993. 19-day answers (₹2,654 interest, ₹2,85,854) get at most 7."
+  },
+  {
+    "id": "de_04",
+    "domain": "document_extraction",
+    "priority": "latency",
+    "hidden_difficulty": "easy",
+    "prompt": "Extract the phone number and email address from this text and return them as JSON with keys phone and email.\n\n\"Hi, this is Priya from the Hyderabad office. You can reach me on +91 98491 22310 or priya.r@northwind.example during work hours.\"",
+    "reference_or_rubric": "JSON: phone = +91 98491 22310 (any spacing), email = priya.r@northwind.example. Both correct for full marks."
+  },
+  {
+    "id": "de_05",
+    "domain": "document_extraction",
+    "priority": "accuracy",
+    "hidden_difficulty": "medium",
+    "prompt": "Extract every line item from this purchase order into a JSON array with fields item, quantity, unit_price, line_total. Then add a field grand_total.\n\nPURCHASE ORDER PO-7731\nSupplier: Kavya Electricals\n1. LED tube light 20W — qty 40 — ₹210 each\n2. MCB 32A single pole — qty 12 — ₹385 each\n3. Copper wire 1.5 sq mm (90 m roll) — qty 6 — ₹1,450 each\n4. Junction box 4x4 — qty 25 — ₹48 each\nDelivery to: Plot 14, MIDC, Nashik",
+    "reference_or_rubric": "Four items with line totals 8400, 4620, 8700, 1200; grand_total 22920. Valid JSON array plus grand_total. Full marks need all four line totals and the grand total correct."
+  },
+  {
+    "id": "de_06",
+    "domain": "document_extraction",
+    "priority": "accuracy",
+    "hidden_difficulty": "hard",
+    "prompt": "Extract the termination, notice-period and liability clauses from this agreement into JSON (clause_id, topic, text). Then analyse whether any two clauses contradict each other and explain the legal implication for the Vendor.\n\n7.1 Either party may terminate this Agreement for convenience with 60 days' written notice.\n7.2 The Customer may terminate immediately upon a material breach by the Vendor that is not cured within 15 days of notice.\n9.1 The Vendor's aggregate liability under this Agreement shall not exceed the fees paid in the 12 months preceding the claim.\n9.2 Notwithstanding clause 9.1, the Vendor shall be liable for all losses, without limit, arising from any breach of its data-protection obligations.\n12.4 The Vendor shall not be liable for any indirect or consequential loss, including loss of data, under any circumstances.",
+    "reference_or_rubric": "JSON lists 7.1 (termination for convenience, 60 days), 7.2 (termination for uncured material breach, 15-day cure), 9.1 (liability cap = 12 months' fees), 9.2 (unlimited liability for data-protection breaches), 12.4 (no liability for indirect/consequential loss incl. loss of data). Contradiction: 9.2 makes Vendor liable without limit for data-protection breaches, while 12.4 excludes liability for loss of data 'under any circumstances'; these conflict when a data-protection breach causes data loss. Implication: ambiguity is likely construed against the drafter / specific (9.2 'notwithstanding') may override general (12.4); Vendor faces uncertain, potentially uncapped exposure and should reconcile the clauses. Full marks require spotting the 9.2 vs 12.4 conflict and explaining the exposure."
+  },
+  {
+    "id": "de_07",
+    "domain": "document_extraction",
+    "priority": "cost",
+    "hidden_difficulty": "medium",
+    "prompt": "Is WhatsApp message se order details JSON mein extract karo: customer_name, items (list of {name, qty}), delivery_address, payment_mode.\n\n\"Bhaiya namaste, main Sunita Verma bol rahi hoon. Mujhe 2 packet atta (10 kg wala), 1 litre sarson ka tel aur 3 dozen ande chahiye. Address: Flat 302, Shanti Apartments, Sector 12, Noida. Payment cash on delivery karungi. Kal subah tak bhej dena please.\"",
+    "reference_or_rubric": "JSON: customer_name Sunita Verma; items: atta 10kg x2, mustard oil 1L x1, eggs 3 dozen (or 36); delivery_address Flat 302, Shanti Apartments, Sector 12, Noida; payment_mode cash on delivery / COD. All fields correct for full marks."
+  },
+  {
+    "id": "de_08",
+    "domain": "document_extraction",
+    "priority": "latency",
+    "hidden_difficulty": "medium",
+    "prompt": "Extract from this job posting into JSON: title, company, location, experience_years, skills (list), salary_range.\n\nWe're hiring a Senior Data Engineer at Lumen Retail Tech, Bengaluru (hybrid). 5-8 years of experience building batch and streaming pipelines. Must know Python, Spark, Airflow and SQL; Kafka is a plus. CTC ₹28-38 LPA depending on experience. Apply by 30 Oct.",
+    "reference_or_rubric": "JSON: title Senior Data Engineer; company Lumen Retail Tech; location Bengaluru (hybrid); experience_years 5-8; skills include Python, Spark, Airflow, SQL (Kafka optional/plus); salary_range ₹28-38 LPA. All fields correct for full marks."
+  },
+  {
+    "id": "tr_01",
+    "domain": "translation",
+    "priority": "latency",
+    "hidden_difficulty": "easy",
+    "prompt": "Translate into Hindi: \"Your order has been shipped and will arrive on Tuesday.\"",
+    "reference_or_rubric": "Natural Hindi equivalent of: आपका ऑर्डर भेज दिया गया है और मंगलवार को पहुँच जाएगा। Must preserve 'shipped' and 'Tuesday'. Any natural wording is fine."
+  },
+  {
+    "id": "tr_02",
+    "domain": "translation",
+    "priority": "accuracy",
+    "hidden_difficulty": "medium",
+    "prompt": "Translate this customer message into English:\n\nमैंने पिछले हफ्ते जो वॉशिंग मशीन खरीदी थी, उसमें से अजीब आवाज़ आ रही है और कभी-कभी बीच में ही बंद हो जाती है। क्या कोई टेक्नीशियन इस हफ्ते आ सकता है? मैं शनिवार को घर पर रहूँगा।",
+    "reference_or_rubric": "English: The washing machine I bought last week is making a strange noise and sometimes stops midway. Can a technician come this week? I will be at home on Saturday. Must keep: last week, strange noise, stops midway, technician this week, home on Saturday."
+  },
+  {
+    "id": "tr_03",
+    "domain": "translation",
+    "priority": "accuracy",
+    "hidden_difficulty": "medium",
+    "prompt": "Translate into English:\n\nநான் நேற்று உங்கள் கடையில் வாங்கிய மொபைல் போன் சார்ஜ் ஆகவில்லை. பில் என்னிடம் உள்ளது. நாளை மாற்றித் தர முடியுமா?",
+    "reference_or_rubric": "English: The mobile phone I bought at your shop yesterday is not charging. I have the bill. Can you replace it tomorrow? Must keep: bought yesterday, not charging, has the bill, replace tomorrow."
+  },
+  {
+    "id": "tr_04",
+    "domain": "translation",
+    "priority": "accuracy",
+    "hidden_difficulty": "hard",
+    "prompt": "Translate this legal notice into formal Hindi suitable for a court filing. Preserve the precise legal meaning of every clause (indemnify, without prejudice, time is of the essence), keep the dates and amounts exact, and after the translation list any terms where a direct Hindi equivalent does not exist and explain how you handled them.\n\n\"NOTICE: You are hereby called upon to pay the outstanding sum of ₹4,75,000 within 15 days of receipt of this notice, failing which our client shall initiate legal proceedings without further notice. Our client reserves the right to claim interest at 12% per annum from 01-Aug-2026. This notice is issued without prejudice to our client's other rights and remedies. You shall indemnify our client against all costs arising from your default. Time is of the essence.\"",
+    "reference_or_rubric": "Formal Hindi translation covering every sentence: demand for ₹4,75,000 within 15 days of receipt; legal proceedings without further notice on failure; interest 12% p.a. from 01-Aug-2026 reserved; 'without prejudice' rendered as e.g. 'अन्य अधिकारों एवं उपचारों पर प्रतिकूल प्रभाव डाले बिना'; indemnify as 'क्षतिपूर्ति'; 'time is of the essence' as e.g. 'समय इस सूचना का सार/मूल तत्व है'. Then a list of hard-to-translate terms (at least 'without prejudice', 'time is of the essence', 'indemnify') with the handling explained. Amounts and dates exact. Deduct for missing clauses, wrong amounts, or no terminology notes."
+  },
+  {
+    "id": "tr_05",
+    "domain": "translation",
+    "priority": "cost",
+    "hidden_difficulty": "medium",
+    "prompt": "Convert this Hinglish complaint into polite, formal English suitable for an email:\n\n\"Yaar aapke app mein recharge kiya tha 299 ka, paisa kat gaya lekin recharge hua hi nahi. Do din ho gaye, koi reply nahi aa raha. Jaldi refund karo ya recharge karo, warna main consumer court jaunga.\"",
+    "reference_or_rubric": "Formal English email text saying: did a ₹299 recharge on the app, money was deducted but recharge did not happen; two days passed with no reply; requests prompt refund or recharge; otherwise will approach consumer court. Tone polite/formal; all facts preserved."
+  },
+  {
+    "id": "tr_06",
+    "domain": "translation",
+    "priority": "latency",
+    "hidden_difficulty": "medium",
+    "prompt": "Translate this SMS into Telugu for customers in Andhra Pradesh:\n\n\"Dear customer, your electricity bill of ₹1,340 for September is due on 15 October. Pay via the app to avoid a late fee.\"",
+    "reference_or_rubric": "Natural Telugu SMS preserving: electricity bill ₹1,340 for September, due 15 October, pay via app, avoid late fee. Example: ప్రియమైన కస్టమర్, సెప్టెంబర్ నెల విద్యుత్ బిల్లు ₹1,340 అక్టోబర్ 15 లోగా చెల్లించాలి. ఆలస్య రుసుము నివారించడానికి యాప్ ద్వారా చెల్లించండి."
+  },
+  {
+    "id": "tr_07",
+    "domain": "translation",
+    "priority": "accuracy",
+    "hidden_difficulty": "hard",
+    "prompt": "Translate the following passage into Hindi, then compare two possible renderings of the idiom in the last sentence and explain, step by step, which one you chose and why it fits the speaker's tone better.\n\n\"The monsoon arrived late that year, and the farmers of Dhanora watched the sky the way one watches a debtor who keeps promising to pay. When the rain finally came, it came all at once, and the river took the bridge with it. 'Well,' said old Kesari, wringing out her sari, 'when it rains, it pours.'\"",
+    "reference_or_rubric": "A fluent Hindi translation of all three sentences (late monsoon, farmers watching sky like watching a debtor who keeps promising, rain all at once, river takes the bridge, Kesari's remark). Then two candidate Hindi renderings of 'when it rains, it pours' (e.g. literal 'जब बरसता है तो मूसलाधार बरसता है' vs idiomatic 'मुसीबत अकेले नहीं आती' / 'एक तो करेला ऊपर से नीम चढ़ा'), a comparison, and a justified choice tied to Kesari's wry, resigned tone. Deduct if the comparison or reasoning is missing."
+  },
+  {
+    "id": "cl_01",
+    "domain": "classification",
+    "priority": "latency",
+    "hidden_difficulty": "easy",
+    "prompt": "Classify the sentiment of this review as exactly one of: positive, negative, neutral. Answer with only the label.\n\nReview: \"Delivery was fast and the packaging was neat, but the earphones stopped working in three days. Very disappointed.\"",
+    "reference_or_rubric": "negative"
+  },
+  {
+    "id": "cl_02",
+    "domain": "classification",
+    "priority": "latency",
+    "hidden_difficulty": "easy",
+    "prompt": "Is customer message ka intent classify karo. Options: refund_request, order_status, cancel_order, product_query, complaint. Sirf label likho.\n\nMessage: \"Mera order abhi tak nahi aaya hai, 5 din ho gaye. Kab tak aayega? Tracking bhi update nahi ho raha.\"",
+    "reference_or_rubric": "order_status"
+  },
+  {
+    "id": "cl_03",
+    "domain": "classification",
+    "priority": "cost",
+    "hidden_difficulty": "easy",
+    "prompt": "Classify this support ticket into exactly one category: billing, technical, account, shipping. Reply with only the category.\n\nTicket: \"I was charged twice for my annual subscription on 2 October. Please reverse one of the charges.\"",
+    "reference_or_rubric": "billing"
+  },
+  {
+    "id": "cl_04",
+    "domain": "classification",
+    "priority": "accuracy",
+    "hidden_difficulty": "hard",
+    "prompt": "Classify the complaint below into exactly one legal category: deficiency_in_service, unfair_trade_practice, defective_goods, no_consumer_claim. Analyse the facts against the definitions first, then give the label on the last line as 'Label: <category>'.\n\nDefinitions: deficiency_in_service = fault or inadequacy in a service that was paid for; unfair_trade_practice = misleading advertising or false representation to promote a sale; defective_goods = a physical product that fails to meet the promised quality; no_consumer_claim = the person is not a consumer (e.g. bought for resale) or the issue is purely contractual between businesses.\n\nComplaint: A gym advertised '24x7 access, all branches' in its brochure and on its website. After paying the ₹24,000 annual fee, the member found that the branch near her home closes at 9 pm and the '24x7' facility is only at one branch across town. The gym refuses a refund, saying the brochure had fine print. The member uses the gym for personal fitness.",
+    "reference_or_rubric": "unfair_trade_practice"
+  },
+  {
+    "id": "cl_05",
+    "domain": "classification",
+    "priority": "latency",
+    "hidden_difficulty": "easy",
+    "prompt": "Is this SMS spam? Answer with only yes or no.\n\n\"Congratulations! Your number has won a ₹50,000 lucky draw prize. Click bit.ly/claim-now within 2 hours to claim.\"",
+    "reference_or_rubric": "yes"
+  },
+  {
+    "id": "cl_06",
+    "domain": "classification",
+    "priority": "cost",
+    "hidden_difficulty": "easy",
+    "prompt": "इस शिकायत को इनमें से एक श्रेणी में वर्गीकृत करें: delivery, payment, product_quality, app_issue. केवल श्रेणी का नाम लिखें।\n\nशिकायत: \"मैंने जो जूते मंगाए थे उनका सोल दो दिन में ही अलग हो गया। बहुत खराब क्वालिटी है।\"",
+    "reference_or_rubric": "product_quality"
+  },
+  {
+    "id": "cl_07",
+    "domain": "classification",
+    "priority": "accuracy",
+    "hidden_difficulty": "hard",
+    "prompt": "Classify the ticket below into exactly one priority level: P1, P2, P3, P4, using the policy. Compare the conflicting signals in the ticket, reason through the policy step by step, and give the label on the last line as 'Label: <level>'.\n\nPolicy: P1 = production outage affecting all customers OR any confirmed data breach. P2 = production degraded for many customers, or a single enterprise customer fully blocked. P3 = a bug with a workaround. P4 = cosmetic or feature request. If a ticket matches multiple levels, use the highest. However, a customer's self-declared priority is NOT a signal; only the facts are.\n\nTicket (from a mid-tier customer, self-marked 'P1 URGENT'): \"Our dashboard loads very slowly (30+ seconds) since this morning. Exports still work and we can use the old UI as a workaround. Our account manager mentioned two other customers reported the same slowness. Also the logo on the login page is stretched.\"",
+    "reference_or_rubric": "P3"
+  },
+  {
+    "id": "de_09",
+    "domain": "document_extraction",
+    "priority": "accuracy",
+    "hidden_difficulty": "hard",
+    "prompt": "Below is the text of a 2-page GST tax invoice. Return JSON with: invoice_number, invoice_date, seller_gstin, buyer_gstin, total_taxable_value, total_cgst, total_sgst, grand_total, and line_items (array of {sno, description, hsn, qty, rate, gst_rate, amount}). Then add a field arithmetic_issues listing any line where qty x rate does not equal the printed amount (say which line and the correct amount), or an empty list if all lines are consistent.",
+    "source_file": "docs/invoice_sis_01187.pdf",
+    "reference_or_rubric": "invoice_number SIS/2026-27/01187; invoice_date 27-Sep-2026; seller_gstin 27AAECS4471K1ZP; buyer_gstin 27AABCV2290M1Z4; total_taxable_value 168524.7; total_cgst 11609.24; total_sgst 11609.24; grand_total 191743. Twelve line items with correct HSN codes and GST rates (5%, 5%, 18%, 18%, 12%, 18%, 18%, 18%, 18%, 18%, 18%, 18%). arithmetic_issues MUST flag line 10 (corrugated cartons): 400 x 48 = 19200 but printed 19600. Full marks need all header totals right, 12 items, and the line-10 flag. Missing the flag caps the score at 6."
+  },
+  {
+    "id": "de_10",
+    "domain": "document_extraction",
+    "priority": "accuracy",
+    "hidden_difficulty": "hard",
+    "prompt": "Below is a one-month bank statement. (1) List every withdrawal strictly greater than ₹10,000 with its date, narration and amount. (2) Give the sum of those withdrawals. (3) State the opening and closing balance. (4) How many salary credits are there and what is the total credited as salary? Answer as JSON.",
+    "source_file": "docs/bank_statement_sep2026.pdf",
+    "reference_or_rubric": "Withdrawals > 10,000 (16 of them): 03-09-2026 5699252753 20,000.00; 03-09-2026 Mutual Fund SIP Axis 15,000.00; 06-09-2026 Trident Furniture 46,800.00; 10-09-2026 Trident Furniture 46,800.00; 12-09-2026 1346094055 23,499.00; 12-09-2026 Pinnacle Property Mgmt RENT 32,000.00; 12-09-2026 LIC PREMIUM 14,230.00; 13-09-2026 ICICI HOME LOAN EMI 27,850.00; 17-09-2026 Pinnacle Property Mgmt RENT 32,000.00; 17-09-2026 6495060795 23,499.00; 18-09-2026 LIC PREMIUM 27,850.00; 18-09-2026 4609643115 23,499.00; 22-09-2026 Bajaj Finserv EMI 14,230.00; 24-09-2026 ICICI HOME LOAN EMI 27,850.00; 28-09-2026 ICICI HOME LOAN EMI 27,850.00; 29-09-2026 Trident Furniture 46,800.00. Sum = 449,757.00. Opening 1,84,320.55; closing 44,357.57. Salary credits: 2 (TECHNOVA SYSTEMS), total 2,85,000.00. Full marks need the exact count, every item, the correct sum (±1 rupee) and both balances. Wrong count or sum caps at 5."
+  },
+  {
+    "id": "de_11",
+    "domain": "document_extraction",
+    "priority": "accuracy",
+    "hidden_difficulty": "medium",
+    "prompt": "Below is a bilingual (Hindi/English) motor insurance policy schedule. Extract as JSON: policy_number, insured_name, registration_number, make_model, idv, period_from, period_to, ncb_percent, total_od_premium, total_liability_premium, gst, total_premium_payable, nominee_name, nominee_relation, hypothecated_to. Use English values.",
+    "source_file": "docs/motor_policy_schedule_bsg.pdf",
+    "reference_or_rubric": "policy_number BSG/MTR/2026/0088213; insured_name Priyanka Kulkarni; registration_number MH 12 RT 4471; make_model Hyundai Creta SX 1.5 Diesel; idv 985000; period_from 14-Oct-2026; period_to 13-Oct-2027; ncb_percent 35; total_od_premium 19854; total_liability_premium 3791; gst 4256; total_premium_payable 27901; nominee_name Rohan Kulkarni; nominee_relation husband; hypothecated_to HDFC Bank (Kothrud). All 15 fields right = 10; each wrong/missing field -1; IDV must be the total 9,85,000 not the vehicle-only 9,40,000."
+  },
+  {
+    "id": "de_12",
+    "domain": "document_extraction",
+    "priority": "accuracy",
+    "hidden_difficulty": "hard",
+    "prompt": "Below is a home loan sanction letter. First, give a table of the key commercial terms (loan amount, interest rate and how it resets, tenure, EMI, processing fee incl. GST, LTV, mandatory insurance premium). Second, list every clause that imposes a charge, penalty or risk on the borrower, each in one line, and say which THREE a borrower should negotiate first and why. Third, state the total up-front cash the borrower must pay before or at disbursement, showing your working.",
+    "source_file": "docs/loan_sanction_letter_mhfl.pdf",
+    "reference_or_rubric": "Key terms: 68,50,000; 8.65% floating = PLR 16.40% minus 7.75% spread, quarterly reset; 240 months; EMI 60,062; processing fee 40,415 (34,250 + 6,165 GST); LTV 79.65%; term cover premium 1,12,400. Borrower-adverse clauses that must appear: 2% balance-transfer charge; 24% penal interest + 590 bounce charge; 0.25% conversion fee (min 5,000); cross-default to group companies; recall on income < 1,50,000 / letting out / false info; valuation 3,500 + legal 4,500 payable even if not availed; tenure auto-extends to 300 months on rate rise; statement/retrieval charges; sanction withdrawable at discretion. Up-front cash: processing fee 40,415 + valuation 3,500 + legal 4,500 = 48,415 (plus 1,12,400 insurance if not funded into the loan, i.e. 1,60,815 if paid upfront); accept either figure if the assumption is stated. Negotiation picks must be reasoned. Missing cross-default or the recall clause caps at 6."
+  },
+  {
+    "id": "de_13",
+    "domain": "document_extraction",
+    "priority": "accuracy",
+    "hidden_difficulty": "medium",
+    "prompt": "Below is a customer complaint letter in Hindi. Extract as JSON in English: complainant_name, account_number, customer_id, disputed_amount, transaction_date, merchant_narration, card_last4, phone_complaint_ref, date_dispute_form_submitted, regulation_cited, remedies_requested (list), escalation_threat, deadline_given_days.",
+    "source_file": "docs/complaint_letter_hindi.pdf",
+    "reference_or_rubric": "complainant_name Sunita Ramesh Jadhav; account_number 41200100556712; customer_id 77310562; disputed_amount 24990; transaction_date 28 Sep 2026 (~11:40 pm); merchant_narration POS/FLIPKART INTERNET/0928; card_last4 3391; phone_complaint_ref CC2026092811207; date_dispute_form_submitted 29 Sep 2026; regulation_cited RBI circular of 6 July 2017 on limited liability for unauthorised electronic transactions (zero liability if reported within 3 working days, shadow credit within 10 working days); remedies_requested = full refund of 24,990, savings-rate interest from 28 Sep until refund, written status by email; escalation_threat Banking Ombudsman; deadline_given_days 7. Each wrong or missing field -1."
+  },
+  {
+    "id": "cc_09",
+    "domain": "call_centre_summary",
+    "priority": "latency",
+    "hidden_difficulty": "hard",
+    "prompt": "Below is the auto-transcript of a loan collections call in Hinglish. Write the call summary in English for the collections CRM with these sections: Issue, Customer's reason, Promise to pay (every amount with its date), Agent commitments, Risks/flags for the supervisor. Be precise with numbers.",
+    "source_file": "calls/call_collections_hinglish.txt",
+    "reference_or_rubric": "Issue: Sept EMI 11,350 (due 5 Sep) unpaid on PL a/c ending 4482; late charge 590 applied. Reason: garment business, client payment of 2 lakh delayed (promised 10 Oct, already slipped once). PTP: 3,000 today (3 Oct) via Google Pay; 20,290 by 12 Oct = remaining 8,940 (8,350 + 590) + October EMI 11,350. Agent commitments: NACH presentation hold till 12 Oct, late-fee waiver request (manager decides, reply in 2 days, no guarantee), SMS confirmation with payment link. Flags: customer objected to the 'threat' about CIBIL; second slip risk on client payment; no-calls-before-8am preference; 60-day bureau reporting risk. Full marks need both PTP amounts with dates and the 20,290 total; a summary that gives only 8,940 or omits the NACH hold caps at 6."
+  },
+  {
+    "id": "cc_10",
+    "domain": "call_centre_summary",
+    "priority": "latency",
+    "hidden_difficulty": "medium",
+    "prompt": "Summarise this broadband support call for the CRM. Give: (a) a two-line overview, (b) a table of action items with columns Issue, Action, Owner (agent/customer/technician), Reference or date, (c) anything the customer asked that was deferred.",
+    "source_file": "calls/call_broadband_english.txt",
+    "reference_or_rubric": "Three issues: (1) slow speed ~40-45 Mbps on a 300 Mbps plan, cause low optical power -27 dBm, technician booked 3 Oct 10-1, ticket SF-TK-883120, must call before arriving (dog); (2) double payment of 999 on 2 Sep (manual, PG77120) and 4 Sep (auto-pay, PG77905), resolved by adjusting the credit against October's bill, ref ADJ-2026-10-4471, October auto-pay suppressed, customer will stop paying manually; (3) relocation to Prestige Shantiniketan, Whitefield around 28-29 Oct, serviceable, free once a year, customer to call 5 days before with flat number. Deferred: shift scheduling; router upgrade not eligible until June 2027 (or 1,500 now). Full marks need all three issues with references and the customer-owned action (call 5 days before). Missing the double-payment resolution or the ticket number caps at 6."
+  },
+  {
+    "id": "cc_11",
+    "domain": "call_centre_summary",
+    "priority": "latency",
+    "hidden_difficulty": "medium",
+    "prompt": "नीचे एक UPI ग्राहक सेवा कॉल का हिंदी प्रतिलेख है। CRM के लिए हिंदी में सारांश लिखें: (1) समस्या, (2) एजेंट ने क्या बताया और क्या किया, (3) ग्राहक को आगे क्या करना है, (4) ग्राहक का दूसरा प्रश्न और उसका उत्तर। सभी संख्याएँ और रेफ़रेंस नंबर सही लिखें।",
+    "source_file": "calls/call_upi_hindi.txt",
+    "reference_or_rubric": "Summary must be in Hindi (Devanagari). Problem: ₹2,350 UPI to Patil Kirana Store on 29 Sep 9:12 pm, ref 627299114508, debited but pending; customer already paid cash again. Agent: explained pending vs failed, auto-reversal by end of 30 Sep (one working day) to Saraswat Bank account if unsettled; filed complaint PF-CMP-20260930-10882; advised app update from v4.2. Customer next: wait till tomorrow, then raise dispute in app or call; if merchant receives it, ask merchant to return. Second question: ₹48,000 college fee on the 15th; limit is 1 lakh/day (5 lakh for education), so fine. Full marks need the complaint number, the UPI reference and the 30 Sep deadline. Answer in English caps at 5."
+  },
+  {
+    "id": "cc_12",
+    "domain": "call_centre_summary",
+    "priority": "latency",
+    "hidden_difficulty": "hard",
+    "prompt": "Below is a health insurance claims call in Hinglish. Write the CRM note in English: correct policy and claim identifiers, what was claimed and why it was repudiated, what the customer disputes, what documents the customer must send and where, references raised by the agent, the expected payout if the claim is reinstated and why it is lower than billed, escalation path, and any process gaps to report internally. Use only the corrected identifiers.",
+    "source_file": "calls/call_health_claim_hinglish.txt",
+    "reference_or_rubric": "Policy ASH/2025/11/30291 (NOT ASH/2024/11/30921, which the customer read wrongly first); claim CLM-2026-09-77410; Mrs Kavita Iyer, Lakshmi Multispeciality Chennai, 18-21 Sep, laparoscopic cholecystectomy, claimed 1,84,600, repudiated for non-disclosure (discharge summary says gallstones known since 2023). Customer says first diagnosis was August 2026 ultrasound. Docs: treating doctor's (Dr Subramanian) letter on date of first diagnosis + August 2026 ultrasound report, email to claims@arogyashield.example with claim number in subject. Reconsideration ref RC-77410-A, 15 working days. Pre-auth 1,20,000 was provisional. If reinstated ~1,45,000-1,50,000 because deluxe room 7,500/day exceeds 5,000/day entitlement (proportionate deduction ~33%). Escalation: GRO, then IRDAI Bima Bharosa / ombudsman. Internal: hospital network desk didn't inform room cap, feedback raised. Renewal 11 Nov, premium 24,300, unaffected. Using the wrong policy number anywhere caps at 4."
+  }
+]

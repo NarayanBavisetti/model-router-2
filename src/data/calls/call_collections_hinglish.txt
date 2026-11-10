@@ -1,0 +1,30 @@
+[Call ID 7731-2026-1003 | Duration 09:42 | Auto-transcribed, speaker labels: AGENT / CUST]
+AGENT: Hello, good afternoon, main Rakesh bol raha hoon Finova Capital se, kya meri baat Mr Imran Shaikh se ho rahi hai?
+CUST: Haan haan bol raha hoon, kaun... Finova? Haan boliye.
+AGENT: Sir aapka personal loan account hai hamare saath, account number ending 4482, uska September ka EMI ₹11,350 abhi tak receive nahi hua hai. Due date 5 September thi, aaj 3 October ho gaya. Main bas samajhna chahta tha ki kya problem hai.
+CUST: Haan dekho bhai, matlab... mujhe pata hai. Actually mera, umm, mera business hai na garments ka, Dharavi mein, toh is baar payment nahi aaya client se. Do lakh ka payment atka hua hai.
+AGENT: Okay sir, samajh sakta hoon. Toh aap approximately kab tak expect kar rahe ho ki payment aa jaayega?
+CUST: Woh bol rahe hain 10 tareekh tak, 10 October. Par pichhli baar bhi bola tha 20 September, nahi aaya.
+AGENT: Theek hai. Sir, ek cheez batana zaroori hai, abhi aapke account pe late payment charge ₹590 lag chuka hai aur agar 60 days cross ho gaye toh bureau mein report ho jaayega, matlab CIBIL pe asar padega.
+CUST: Haan yeh toh... dekho yeh dhamki mat do mujhe, main pehle bhi time pe deta aaya hoon, ek baar bhi miss nahi kiya tha do saal mein.
+AGENT: Nahi sir, dhamki nahi hai, main bas information de raha hoon, aapka record actually bahut accha hai, 24 EMI on time. Isliye hi main call kar raha hoon, warna system automatically process karta hai.
+CUST: Haan theek hai... toh mujhe kya karna chahiye?
+AGENT: Sir, kya aap ek partial amount abhi de sakte hain? Jaise ₹5,000, taaki account mein activity dikhe, aur baaki 10 ke baad?
+CUST: Abhi 5,000... hmm, abhi toh mere paas, matlab, dekho 3,000 de sakta hoon aaj, Google Pay se. Baaki jab client ka aayega.
+AGENT: 3,000 aaj, theek hai sir. Aur remaining ₹8,350 plus late charge, toh total ₹8,940, woh aap kab tak de denge?
+CUST: 12 tareekh. 12 October tak pakka. Agar 10 ko client ka aa gaya toh 10 ko hi kar dunga.
+AGENT: Toh main note kar leta hoon, promise to pay: ₹3,000 today 3 October, aur ₹8,940 by 12 October. Sahi hai?
+CUST: Haan sahi hai. Par ek baat, yeh jo late charge hai 590, yeh hata sakte ho? Pehli baar hua hai.
+AGENT: Sir main request daal deta hoon waiver ke liye, final decision branch manager ka hoga, main aapko 2 din mein batata hoon. Guarantee nahi de sakta par aapka record dekh ke chance accha hai.
+CUST: Theek hai. Aur ek cheez, yeh October ka EMI bhi 5 ko aa jaayega na? Woh bhi same time pe?
+AGENT: Haan sir, October ka EMI 5 October ko NACH se try hoga. Agar account mein balance nahi hoga toh woh bhi bounce hoga aur ₹590 aur lagega. Toh agar possible ho toh 5 tak minimum 11,350 rakh lijiye account mein, ya phir mujhe bata dijiye toh main NACH presentation hold karwa sakta hoon 12 tak.
+CUST: Hold karwa do yaar, 12 tak. Dono ek saath de dunga, September ka aur October ka.
+AGENT: Toh 12 October ko total hoga ₹8,940 plus ₹11,350, matlab ₹20,290. Aap sure ho sir? Kyunki agar 12 ko miss hua toh phir main kuch nahi kar paunga.
+CUST: Haan... haan sure hoon. Client ka 2 lakh aa raha hai, usme se ho jaayega.
+AGENT: Theek hai sir. Ek aur baat, aapne pichhle call mein bola tha ki subah 8 baje se pehle call mat karna, maine note kiya hua hai. Yeh call 2:15 pm pe hai.
+CUST: Haan haan, woh theek hai, aaj time theek hai. Subah bachche school jaate hain toh busy hota hoon.
+AGENT: Samajh gaya. Toh summary: aaj ₹3,000 Google Pay se, 12 October tak ₹20,290 dono EMI ka, NACH hold 12 tak, late fee waiver request submit. Main aapko SMS bhej deta hoon yeh sab likh ke.
+CUST: Haan bhej do. Aur agar waiver nahi hua toh bhi batana.
+AGENT: Zaroor sir. Payment link bhi SMS mein hoga, ya aap app se bhi kar sakte hain. Thank you sir, aapka din accha ho.
+CUST: Theek hai, bye.
+[End of call]

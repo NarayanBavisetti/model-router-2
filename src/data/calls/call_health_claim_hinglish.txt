@@ -1,0 +1,29 @@
+[Call ID HC-2026-1001-0931 | Duration 12:31 | Auto-transcribed | Note: line noise 00:00-00:40]
+AGENT: Good morning, Arogya Shield Health Insurance, Priya speaking, how can I help?
+CUST: Haan hello, hello? Awaaz aa rahi hai?
+AGENT: Yes sir, I can hear you.
+CUST: Haan, dekhiye, mera claim reject ho gaya hai aur mujhe samajh nahi aa raha kyun. Policy number hai... ek second... ASH slash 2024 slash 11 slash 30921.
+AGENT: ASH/2024/11/30921, let me pull it up... Sir, is policy pe toh koi claim hi nahi hai. Yeh policy Mr Harish Mehta ke naam pe hai, individual plan, aur last claim 2024 mein tha.
+CUST: Mehta? Nahi nahi, main Ganesh Iyer bol raha hoon. Ek minute, galat number pad liya shayad, yeh purana card hai. Haan, yeh wala, ASH slash 2025 slash 11 slash 30291. Two nine one, not nine two one.
+AGENT: ASH/2025/11/30291. Okay, yes, Mr Ganesh Iyer, family floater, sum insured 5 lakh, you plus spouse plus one child. Aur claim number hai CLM-2026-09-77410, hospitalisation of Mrs Kavita Iyer at Lakshmi Multispeciality, Chennai, 18 to 21 September, claimed amount ₹1,84,600. Status is "repudiated". Sahi hai?
+CUST: Haan wahi. Toh kyun reject hua? Hospital network mein hai, humne pre-auth bhi liya tha.
+AGENT: Let me read the repudiation note... Sir, the reason given is "non-disclosure of pre-existing disease". Treatment tha laparoscopic cholecystectomy, gallbladder removal, aur discharge summary mein likha hai "known case of gallstones since 2023".
+CUST: Arre lekin policy 2025 mein li thi, aur gallstones ka toh pata hi tab chala jab ultrasound hua is saal August mein. 2023 kisne likha?
+AGENT: Sir, that's what the hospital's discharge summary says. Agar woh galat hai toh aapko hospital se ek corrected discharge summary ya treating doctor ka letter chahiye jo clarify kare ki diagnosis kab hua.
+CUST: Theek hai, woh main le aata hoon. Doctor Subramanian the, unse baat karunga. Lekin pre-auth approve kaise hua phir?
+AGENT: Pre-auth was approved for ₹1,20,000 on 17 September as an initial approval, sir. Final claim mein jab full documents aaye tab medical team ne review kiya. Pre-auth approval is always provisional, yeh policy wording mein hai.
+CUST: Toh ab 1,84,600 hum pay kar chuke hain hospital ko, apne pocket se. Yeh paisa kab milega?
+AGENT: Sir, abhi toh claim repudiated hai, toh pehle usko reopen karna hoga. Process yeh hai: aap doctor ka letter aur ultrasound report of August 2026 jo dikhaye first diagnosis, woh claims@arogyashield.example pe bhejiye with claim number in subject. Main ek reconsideration request abhi raise kar deti hoon, reference RC-77410-A. Medical team ka reply 15 working days mein aata hai.
+CUST: 15 working days... matlab almost teen hafte. Aur agar phir bhi reject hua?
+AGENT: Toh aap hamare Grievance Redressal Officer ko likh sakte hain, uska email policy document mein hai, aur uske baad IRDAI ke Bima Bharosa portal ya insurance ombudsman. Lekin pehle doctor ka letter aane dijiye, most cases waheen resolve ho jaate hain.
+CUST: Hmm. Aur yeh jo 1,20,000 pre-auth tha aur 1,84,600 bill, difference ka kya? Room ka tha kya?
+AGENT: Let me see the bill breakup... Room was a deluxe at 7,500 per day, but your plan allows single private AC room up to 5,000 per day. So agar claim approve bhi hota hai toh proportionate deduction lagega, roughly 33 percent on room-linked charges. Mote taur pe approximately 1,45,000 to 1,50,000 payable hota, not the full 1,84,600. Exact figure claims team dega.
+CUST: Yeh toh pehle bataya nahi kisi ne. Hospital ne bola sab covered hai.
+AGENT: Sir, I understand the frustration. Hospital network desk ko room category pata hona chahiye tha. Main ek feedback bhi raise kar deti hoon hospital ke against, but the policy terms would still apply.
+CUST: Theek hai. Toh mujhe doctor ka letter, August ki ultrasound report, aur... bas?
+AGENT: Doctor's letter stating date of first diagnosis, August 2026 ultrasound report, aur agar pehle koi ultrasound ya consultation hai gallbladder ke liye 2025 se pehle toh woh bhi, honestly. Claim number CLM-2026-09-77410 subject mein. Reference RC-77410-A. Aapko ek SMS aur email abhi jaayega.
+CUST: Theek hai, email pe bhej dunga is hafte.
+AGENT: Thank you sir. Aur ek baat, aapke policy renewal 11 November ko due hai, is claim ke chalte renewal pe koi asar nahi padega, bas premium ₹24,300 hoga. Reminder aa jaayega.
+CUST: Okay. Theek hai, thank you.
+AGENT: Thank you Mr Iyer, take care.
+[End of call]

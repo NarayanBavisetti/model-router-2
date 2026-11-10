@@ -1,0 +1,31 @@
+[Call ID BB-55120-20261002 | Duration 14:08 | Auto-transcribed]
+AGENT: Thank you for calling Skyfibre Broadband, this is Deepa, how may I help you today?
+CUST: Hi Deepa, yeah, so I've got, like, three different things, I've been putting this off. Account is under Meera Krishnan, the customer ID is... hang on... 20077 3451.
+AGENT: Thank you Ms Krishnan, I have your account open. Plan is Fibre 300, 300 Mbps, at 999 per month, address is 8th Main, HSR Layout. Go ahead.
+CUST: Okay. First thing. The speed. I'm paying for 300 and I did the test this morning, I'm getting 40, 45 on a good day. On wifi and on cable both. This has been for about two weeks now.
+AGENT: I'm sorry to hear that. Let me run a line diagnostic from my side... one moment... Okay, I can see the ONT is showing an optical power of minus 27 dBm, which is below the acceptable range, it should be better than minus 25. That usually means a bent fibre or a dirty connector somewhere between the pole and your house.
+CUST: So it's a physical thing, not a plan thing.
+AGENT: Correct, it's not a plan issue. I'll need to book a technician. The earliest slot I have is tomorrow, 3rd October, between 10 and 1. Will someone be home?
+CUST: Tomorrow 10 to 1... yes, my husband will be there. Can you make it, um, can you note that there's a dog so they should call before coming up?
+AGENT: Noted, technician to call before arrival, there is a dog. Ticket number is SF-TK-883120. You'll get an SMS.
+CUST: Okay. Second thing, and this one I'm actually annoyed about. September's bill. I was charged twice. 999 on the 2nd September and again 999 on the 4th. Both from my credit card. I only pay once.
+AGENT: Let me check the payment ledger... I can see it. There is a payment on 2nd September, reference PG77120, and another on 4th September, PG77905, both 999, both successful. The second one appears to be from the auto-pay mandate, and the first one you made manually through the app.
+CUST: Right, because the app showed the bill as due so I paid it, and then the auto-pay went anyway.
+AGENT: Yes, that's what happened. The auto-pay runs on the 4th regardless. So you have an excess of 999 sitting as credit on the account right now.
+CUST: I don't want credit, I want a refund to my card.
+AGENT: I understand. I can raise a refund request. Refund to the original card takes 7 to 10 working days. Alternatively I can adjust it against October's bill which means you pay nothing in October. Which do you prefer?
+CUST: Hmm... honestly, the adjustment is fine, that's simpler. But then please make sure the auto-pay doesn't charge me again in October.
+AGENT: I'll apply the credit to October and I'll put a note so the auto-pay for October is suppressed since the balance will be zero. The system should do that automatically but I'll add a manual flag as well. Reference for the adjustment is ADJ-2026-10-4471.
+CUST: Okay, good. And is there a way to stop this happening, like, should I just cancel auto-pay?
+AGENT: If you prefer to pay manually, yes, you can cancel the mandate from the app under Payments, Manage auto-pay. Or keep auto-pay and just don't pay manually. The bill will always show as due until the 4th.
+CUST: I'll keep auto-pay then and stop paying manually. Third thing. We're moving. End of this month, 28th or 29th, to Whitefield, it's Prestige Shantiniketan. Can I take the connection with me?
+AGENT: Let me check feasibility for Prestige Shantiniketan... Yes, that's a serviceable building, we have fibre there. Shifting is free once a year on your plan, and the usual turnaround is 3 working days after the request. Do you want me to schedule it now?
+CUST: Not yet, because the exact date isn't fixed. Can I call later?
+AGENT: Yes. Just call us at least 5 days before the move date with the flat number so we can schedule the disconnection and the new installation together. I'll put a note on the account that a shift is expected around 28th October to Prestige Shantiniketan, Whitefield.
+CUST: Perfect. Oh, one more, sorry. The router. It's the old one, the white one. Will the new place need a new router?
+AGENT: The same router will work. If it's older than 3 years you're eligible for a free upgrade to the dual-band one, let me check... your router was issued in June 2022, so not yet, that would be June next year. If you want it earlier it's 1,500.
+CUST: No, I'll wait. Okay I think that's everything.
+AGENT: To summarise: technician visit tomorrow 10 to 1 for low optical power, ticket SF-TK-883120, they'll call before coming up. Double payment of 999 adjusted against October's bill, reference ADJ-2026-10-4471, auto-pay suppressed for October. Shift to Whitefield noted, you'll call 5 days before. Anything else?
+CUST: No that's it. Thanks Deepa, you've been very helpful.
+AGENT: You're welcome, have a good day.
+[End of call]
